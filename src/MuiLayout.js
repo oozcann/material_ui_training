@@ -1,9 +1,10 @@
 import React from 'react'
-import { Box, Stack, Divider } from '@mui/material'
+import { Box, Stack, Divider,Grid,Paper } from '@mui/material'
 
 const MuiLayout = () => {
   return (
-    <Stack sx={{border: '1px solid'}} direction='row' divider={<Divider orientation='vertical' flexItem/>}>
+    <Paper sx={{padding:'32px'}} elevation={4}>
+      <Stack sx={{border: '1px solid'}} direction='row' divider={<Divider orientation='vertical' flexItem/>}>
         <Box component='span'></Box>
         <Box sx={{
             backgroundColor:'primary.main',
@@ -20,6 +21,13 @@ const MuiLayout = () => {
         </Box>
         <Box display='flex' bgcolor='success.light' width='100px' height='100px' p={2}></Box>
     </Stack>
+    <Grid container my={4} rowSpacing={2} columnSpacing={1}> {/*spacing değeri de alabilir.*/}
+        <Grid item xs={6}><Box bgcolor='primary.light' p={2}>Item 1</Box></Grid>
+        <Grid item xs={6}><Box bgcolor='primary.main' p={2}>Item 2</Box></Grid>
+        <Grid item xs={6}><Box bgcolor='primary.light' p={2}>Item 3</Box></Grid>
+        <Grid item xs={6}><Box bgcolor='primary.main' p={2}>Item 4</Box></Grid>
+    </Grid>
+    </Paper>
   )
 }
 
