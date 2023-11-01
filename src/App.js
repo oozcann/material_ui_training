@@ -19,6 +19,15 @@ import MuiDrawer from './components/MuiDrawer';
 import MuiSpeedDial from './components/MuiSpeedDial';
 import MuiBottomNavigation from './components/MuiBottomNavigation';
 import MuiAvatar from './components/MuiAvatar';
+import MuiBadge from './components/MuiBadge';
+import MuiList from './components/MuiList';
+import MuiChip from './components/MuiChip';
+import MuiTooltip from './components/MuiTooltip';
+import MuiTable from './components/MuiTable';
+import MuiAlert from './components/MuiAlert';
+import MuiSnackbar from './components/MuiSnackbar';
+import MuiDialog from './components/MuiDialog';
+import MuiProgress from './components/MuiProgress';
 function App() {
   return (
     <div className="App">
@@ -41,7 +50,16 @@ function App() {
       {/*<MuiDrawer></MuiDrawer>*/}
       {/*<MuiSpeedDial></MuiSpeedDial>*/}
       {/*<MuiBottomNavigation></MuiBottomNavigation>*/}
-      <MuiAvatar></MuiAvatar>
+      {/*<MuiAvatar></MuiAvatar>*/}
+      {/*<MuiBadge></MuiBadge>*/}
+      {/*<MuiList></MuiList>*/}
+      {/*<MuiChip></MuiChip>*/}
+      {/*<MuiTooltip></MuiTooltip>*/}
+      {/*<MuiTable></MuiTable>*/}
+      {/*<MuiAlert></MuiAlert>*/}
+      {/*<MuiSnackbar></MuiSnackbar>*/}
+      {/*<MuiDialog></MuiDialog>*/}
+      <MuiProgress></MuiProgress>
     </div>
   );
 }
